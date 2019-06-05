@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var riddleText = ['Маленький, серенький, на слона похож. Кто это?',
+					  'В каком слове 3 буквы «Л» и три буквы «П»?',
+					  'Каких камней нет в море?',
+					  'Что у слона длиннее, чем хобот?'];
+	var riddleAnswer = [['слонёнок', 'Слонёнок'],
+						['параллелепипед', 'Параллелепипед'],
+						['сухих','Сухих'],
+						['сопли','Сопли']];
+
+var gamePoints = 0;
+
+for (var i = 0; i < riddleText.length; i++) {
+  	var userAnswer = prompt(riddleText[i] + '\n\nВведите ваш ответ: ');
+	if (riddleAnswer[i].indexOf(userAnswer) != -1) {
+	  alert( 'Правильный ответ!' );
+	  gamePoints ++;
+	} else {
+	  alert( 'Неправильный ответ!' );
+	}
+
+} 
+
+alert ('Вы отгадали '  + gamePoints + ' из ' + riddleText.length + ' загадок!');
+
+</script>

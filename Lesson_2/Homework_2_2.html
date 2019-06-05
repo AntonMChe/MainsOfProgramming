@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var sumOfDeposit = +(prompt("Укажите сумму вклада"));
+	var percentOfDeposit = +(prompt("Укажите годовой процент"));
+    var yearsOfDeposit = 5;
+    var strDeposit = '';
+
+	for (var i = 1; i <= yearsOfDeposit; i++) {   
+	    sumOfDeposit = sumOfDeposit * (1 + percentOfDeposit / 100);
+	    strSumOfDeposit = new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(sumOfDeposit);
+	    strDeposit = strDeposit + 'Сумма депозита по окончанию ' + i + ' года равна ' + strSumOfDeposit + '\n';
+	 }
+	 alert(strDeposit);
+
+
+</script>

@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var answer = parseInt(Math.random() * 100);
+	alert(" Угадайте число от 0 до 100");
+
+	var currentPlayer = 1; 
+	
+	while (true) {
+		PlayerAnswer = +prompt("Попытка игрока " + currentPlayer + "\nВведите число: ");
+		if (PlayerAnswer == answer){
+			alert("Поздраляем игрока " + currentPlayer + ", он молодец!");
+			break;
+		} else if (PlayerAnswer > answer){
+			alert("Вы ввели слишком большее число.");
+		} else if (PlayerAnswer < answer){
+			alert("Вы ввели слишком маленькое число.");
+		}
+		currentPlayer = (currentPlayer == 1) ? 2:1;
+	}
+
+
+</script>
