@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	//курс валют на 11.06.2019
+	var CourseRUBToUSD = 64;
+	var	CourseRUBToEUR = 73;
+
+	var SumRUB = +prompt("Сколько рублей вы хотите перевести в доллары или евро?");
+
+	var SumUSD = Math.round(SumRUB / CourseRUBToUSD);
+	var SumEUR = Math.round(SumRUB / CourseRUBToEUR);
+	
+	alert(SumRUB + " рублей переводится в " + SumUSD + " долларов или " + SumEUR + " евро.");
+
+
+</script>

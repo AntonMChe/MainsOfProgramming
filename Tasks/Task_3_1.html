@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	//a
+	function getArray(n){
+		var arr = [];
+		for (var i = 1; i <= n; i++){
+			arr.push(i);
+		}
+		return arr;	
+	}
+
+	//b
+	function sumArray(array){
+		var sum = 0;
+		for (var i = 0; i < array.length; i++) {
+			sum += array[i]
+		}
+	return sum
+	}
+
+	//c
+	function maxArray(array){
+		var max = array[0];
+		for (var i = 0; i < array.length; i++) {
+			if(array[i] > max)
+			max =array[i]
+		}
+	return max
+	}
+
+	//d
+	function minArray(array){
+		var min = array[0];
+		for (var i = 0; i < array.length; i++) {
+			if(array[i] < min)
+			min =array[i]
+		}
+	return min
+	}
+	
+	
+</script>

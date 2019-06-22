@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var score = 0;
+	var userAnswer = prompt("Вы седите в вертолёте, сзади вас верблюд, спереди крокодил, где вы находитесь?");
+	userAnswer = userAnswer.toLowerCase();
+	if (userAnswer == "в вертолёте" || userAnswer == "в карусели"){
+		alert ("Умничка!");
+		score++;
+	} else {
+		alert ("Не правильно!");
+	}
+
+	userAnswer = prompt("Росло 3 берёзы. На каждой берёзе по 7 веток. На каждой ветке — по 3 яблока. Сколько всего яблок?");
+	userAnswer = userAnswer.toLowerCase();
+	if (userAnswer == "0" || userAnswer == "ноль" || userAnswer ==  "ни одного"){
+		alert ("Умничка!");
+		score++;
+	} else {
+		alert ("Не правильно!");
+	}
+
+	userAnswer = prompt("Какое слово всегда звучит неверно?");
+	userAnswer = userAnswer.toLowerCase();
+	if (userAnswer == "неверно"){
+		alert ("Умничка!");
+		score++;
+	} else {
+		alert ("Не правильно!");
+	}
+
+	userAnswer = prompt("Что нельзя съесть на завтрак?");
+	userAnswer = userAnswer.toLowerCase();
+	if (userAnswer == "обед и ужин" || userAnswer == "ужин и обед" || userAnswer == "ужин" || userAnswer == "обед"){
+
+		alert ("Умничка!");
+		score++;
+	} else {
+		alert ("Не правильно!");
+	}
+
+	if (score == 4){
+	alert("Вы угадали все загадки, вы гений!")
+	}else{
+	alert("Вы угадали " + score + " загадок.");
+	}
+
+</script>

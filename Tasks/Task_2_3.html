@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+var answer = parseInt(Math.random() * 100);
+	alert("Угадайте число от 0 до 100");
+
+	var currentPlayer = 1;
+
+	while (true){
+		var PlayerAnswer = +prompt("Попытка игрока " + currentPlayer + ", введите число. \nДля выхода из игры нажмите 101.");
+	if (PlayerAnswer == "101"){
+		break;
+
+		} else if (PlayerAnswer == answer){
+			alert("Игрок " + currentPlayer + "победил!");
+			break;
+		} else if (PlayerAnswer > answer){
+			alert("Вы ввели слишком большее число.");
+		} else if (PlayerAnswer < answer){
+			alert("Вы ввели слишком маленькое число.");
+		}
+
+		if (currentPlayer == 1){
+			currentPlayer = 2;
+		}else{
+		currentPlayer = 1;	
+		}
+	}
+
+</script>

@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var sumOfDeposit = +(prompt("Укажите сумму вклада"));
+	var percentOfDeposit = +(prompt("Укажите годовой процент"));
+    var years = 5;
+
+    for (var i = 1; i <= years; i++) {
+	sumOfDeposit = sumOfDeposit * (1 + percentOfDeposit / 100);
+	alert(i + " год: " + sumOfDeposit + " рублей.");
+	}
+
+</script>

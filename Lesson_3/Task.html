@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+		function askRiddle(riddleText, riddleAnswer){
+			var answerIsTrue = 0;
+			var userAnswer = prompt(riddleText);
+			userAnswer = userAnswer.toLowerCase();
+			for (var i = 0; i < riddleAnswer.length; i++){
+			if (userAnswer == riddleAnswer[i]){
+				alert("Правильно!");
+				answerIsTrue = 1;
+			}else{
+				alert("Неправильно!");
+			}
+		}
+		return answerIsTrue;
+	}
+
+	var riddleText = ["Вы сидите в вертолёте, сзади вас верблюд, спереди крокодил, где вы находитесь?",
+				  "Росло 3 берёзы. На каждой берёзе по 7 веток. На каждой ветке — по 3 яблока. Сколько всего яблок?",
+				  "Какое слово всегда звучит неверно",
+				  "Что нельзя съесть на завтрак?"]
+	
+	var riddleAnswer = [["в вертолёте", "в карусели"],
+						["0", "ноль", "ни одного"],
+						["неверно"],
+						["обед и ужин", "ужин и обед", "ужин", "обед"]];	
+
+
+	var score = 0;
+
+
+
+	for (var i = 0; i < riddleText.length; i++) {
+		var riddle = riddleText[i];
+		var answer = riddleAnswer[i];
+		score = score + askRiddle(riddle, answer); 
+		]
+	}
+
+
+
+
+</script>
